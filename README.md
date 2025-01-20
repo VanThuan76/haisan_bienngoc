@@ -1,35 +1,14 @@
-# ShadcnUI NextJS 14 Starter Template
+#Information
 
-A Next.js 14 template for building apps with ShadcnUI and Tailwind CSS.
+menu . cơm ngon tự chọn
+bánh quấn chả mực
+bún ăn sáng
+nha mình chỉ lên thế thôi
+sô 9 . đường trần quốc nghiễn , tp hạ long , quảng ninh  ( đối diện cung cá heo )
+tên quán hải sản BIỂN NGỌC
+0835563555 . 0988522888, 0972809715
 
-This is a fork of `https://github.com/shadcn-ui/next-template` just updated for NextJS 14.
+cơm tự chọn mình đang để 98k/1n tặng kem trè hoa quả tráng miêng
+bàn lẩu đặt trước giảm 10%
 
-## Demo  
-[https://shadcn-next-14.vercel.app/](https://shadcn-next-14.vercel.app/)  
-
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/dazeb/shadcnui-next-14) 
-
-All credit to [ShadcnUI](https://ui.shadcn.com/)
-
-## Usage
-
-```bash
-npx create-next-app -e https://github.com/dazeb/shadcnui-next-14
-```
-## Screenshot
-
-![image](https://github.com/user-attachments/assets/6817f61d-4507-4edd-8dc0-78a4b3f5d6a7)
-
-
-## Features
-
-- Next.js 14 App Directory <-- UPDATED FROM 13 NOTHING ELSE.
-- Radix UI Primitives
-- Tailwind CSS
-- Icons from [Lucide](https://lucide.dev)
-- Dark mode with `next-themes`
-- Tailwind CSS class sorting, merging and linting.
-
-## License
-
-Licensed under the [MIT license](https://github.com/shadcn/ui/blob/main/LICENSE.md).
+https://www.facebook.com/profile.php?id=61571621663581&mibextid=wwXIfr&mibextid=wwXIfr
