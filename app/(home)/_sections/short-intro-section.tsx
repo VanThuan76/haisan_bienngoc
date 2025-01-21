@@ -34,7 +34,7 @@ export function ShortIntroSection() {
                             priority={true}
                             className="w-full h-full object-cover object-center rounded-md cursor-pointer hover:scale-110 transition-all ease-in-out duration-300"
                         />
-                        <div className="absolute bottom-2 right-2 p-2 bg-[#f26f25] rounded-md text-xs font-semibold">Liên hệ ngay: 0988522888</div>
+                        <div className="absolute bottom-2 right-2 p-2 bg-[#f26f25] text-slate-50 rounded-md text-xs font-semibold">Liên hệ ngay: 0835563555</div>
                     </div>
                     <div className="relative w-full md:w-[300px] h-[400px] overflow-hidden rounded-md">
                         <Image
@@ -45,7 +45,7 @@ export function ShortIntroSection() {
                             priority={true}
                             className="w-full h-full object-cover object-center rounded-md cursor-pointer hover:scale-110 transition-all ease-in-out duration-300"
                         />
-                        <div className="absolute bottom-2 right-2 p-2 bg-[#f26f25] rounded-md text-xs font-semibold">Liên hệ ngay: 0835563555</div>
+                        <div className="absolute bottom-2 right-2 p-2 bg-[#f26f25] text-slate-50 rounded-md text-xs font-semibold">Liên hệ ngay: 0835563555</div>
                     </div>
                 </div>
             </div>

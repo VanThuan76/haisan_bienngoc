@@ -10,7 +10,7 @@ export function SiteHeader() {
                 <div className="w-full flex items-center justify-end">
                     <nav className="w-full flex justify-end items-center space-x-8">
                         <Link
-                            href={siteConfig.links.github}
+                            href={siteConfig.links.google_map}
                             target="_blank"
                             rel="noreferrer"
                         >
@@ -20,7 +20,7 @@ export function SiteHeader() {
                             </div>
                         </Link>
                         <Link
-                            href={siteConfig.links.twitter}
+                            href="#"
                             target="_blank"
                             rel="noreferrer"
                         >
@@ -30,7 +30,7 @@ export function SiteHeader() {
                             </div>
                         </Link>
                         <Link
-                            href={siteConfig.links.twitter}
+                            href={siteConfig.links.phone}
                             target="_blank"
                             rel="noreferrer"
                         >
