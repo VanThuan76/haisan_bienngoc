@@ -14,9 +14,9 @@ export const metadata: Metadata = {
     },
     description: "Hải Sản Biển Ngọc - Cơm ngon tự chọn, bánh cuốn chả mực, bún ăn sáng. Địa chỉ: Số 9, đường Trần Quốc Nghiễn, TP Hạ Long, Quảng Ninh (đối diện Cung Cá Heo). Hotline: 0835563555, 0988522888.",
     icons: {
-        icon: "/favicon.ico",
-        shortcut: "/favicon-16x16.png",
-        apple: "/apple-touch-icon.png",
+        icon: "/logo.png",
+        shortcut: "/logo.png",
+        apple: "/logo.png",
     },
     openGraph: {
         type: "website",
