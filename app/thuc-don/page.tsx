@@ -3,11 +3,47 @@ import Image from "next/image"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
 
+import { fontBerkshireSwash } from "@/lib/fonts";
+import { cn } from "@/lib/utils";
+
 import { FloatingSocialButtons } from "../(home)/_sections/floating-social-buttons";
 import { SiteFooter } from "../(home)/_sections/site-footer";
 import { SiteHeader } from "../(home)/_sections/site-header";
 
 const Page = () => {
+    const menuItems = [
+        { name: "Mực tươi", price: 150000 },
+        { name: "Tôm rảo biển", price: 150000 },
+        { name: "Cá lạp xạp", price: 150000 },
+        { name: "Ngao các loại", price: 100000 },
+        { name: "Ghẹ xanh", price: 650000 },
+        { name: "Cua gạch", price: 750000 },
+        { name: "Cua thịt", price: 550000 },
+        { name: "Hà ruột", price: 180000 },
+        { name: "Ốc hương", price: 240000 },
+        { name: "Sò huyết", price: 180000 },
+        { name: "Mực trứng", price: 220000 },
+        { name: "Mực ống", price: 320000 },
+        { name: "Tôm xú", price: 780000 },
+        { name: "Tôm hùm đỏ", price: 1590000 },
+        { name: "Cá song", price: 450000 },
+        { name: "Cá dìa", price: 450000 },
+        { name: "Bề bề trứng", price: 250000 },
+        { name: "Hàu nướng mỡ hành", price: 150000 },
+        { name: "Ốc đá", price: 180000 },
+        { name: "Nem hải sản kèm bún", price: 160000 },
+        { name: "Mực giã tay", price: 180000 },
+        { name: "Cơ mai chiên", price: 330000 },
+        { name: "Tôm bơ tỏi", price: 290000 },
+        { name: "Mực khô nướng", price: 250000 },
+        { name: "Hải sâm xào thập cẩm", price: 250000 },
+        { name: "Ốc nhảy", price: 25000 },
+        { name: "Tu hài", price: 550000 },
+        { name: "Ốc móng tay vàng cô tô", price: 190000 },
+        { name: "Ốc móng tay xanh", price: 170000 },
+        { name: "Ngán", price: 50000 },
+    ];
+
     return (
         <div className="relative min-h-screen">
             <SiteHeader />
@@ -17,7 +53,7 @@ const Page = () => {
                     <p className="relative z-40 text-xl">Đặc Sắc - Tươi Sống - Giá Rẻ</p>
                     <div className="absolute z-30 w-full h-full bg-black/70"></div>
                 </section>
-                <Tabs defaultValue="breakfast" className="w-full max-w-7xl mx-auto">
+                <Tabs defaultValue="combo" className="w-full max-w-7xl mx-auto">
                     <TabsList className="grid w-full grid-cols-3">
                         <TabsTrigger value="breakfast">Bữa sáng</TabsTrigger>
                         <TabsTrigger value="combo">Combo</TabsTrigger>
@@ -52,14 +88,33 @@ const Page = () => {
                         <Card className="bg-navy-800 rounded-none">
                             <CardHeader>
                                 <CardTitle className="underline decoration-wavy mb-2">Siêu Ưu Đãi - Siêu Rẻ</CardTitle>
+                                <span className="text-xs italic text-muted-foreground">* Cam đoan: Thực phẩm tươi sống, sạch không dùng chất phụ gia làm hại sức khoẻ</span>
                             </CardHeader>
                             <CardContent className="flex flex-wrap justify-start items-start gap-4">
                                 <div className="md:border-r md:border-r-blue-300 md:pr-4">
-                                    <p className="mb-2 underline decoration-indigo-500 font-semibold">Combo 200k / Suất</p>
+                                    <p className="mb-2 underline decoration-green-500 font-semibold">Combo Lẩu 200k / Suất</p>
+                                    <ul className="list-disc list-inside uppercase space-y-2">
+                                        <li>Ốc hương hấp</li>
+                                        <li>Nem hải sản kèm bún</li>
+                                        <li>Salad chua ngọt</li>
+                                        <li>Đặc sản Hải Sâm Đen xào bông lơ</li>
+                                        <li>Lẩu hải sản</li>
+                                        <ul className="list-disc list-inside pl-4 space-y-2">
+                                            <li>Tôm rảo</li>
+                                            <li>Cá song hoặc cá rìa</li>
+                                            <li>Mực ống nhảy</li>
+                                            <li>Hà Quảng Yên</li>
+                                            <li>Rau, nấm, mỳ, đậu</li>
+                                            <li>Trái cây theo mùa</li>
+                                        </ul>
+                                    </ul>
+                                </div>
+                                <div className="md:border-r md:border-r-blue-300 md:pr-4">
+                                    <p className="mb-2 underline decoration-indigo-500 font-semibold">Combo Cơm Gọi Món 200k / Suất</p>
                                     <ul className="list-disc list-inside uppercase space-y-2">
                                         <li>Tôm rảo biển</li>
                                         <li>Mực ống nhảy</li>
-                                        <li>Nem hải sản kem bơ</li>
+                                        <li>Nem hải sản kèm bún</li>
                                         <li>Hàu nướng mỡ hành</li>
                                         <li>Hải sản xào thập cẩm</li>
                                         <li>Salad chua ngọt</li>
@@ -100,7 +155,7 @@ const Page = () => {
                                     <li>Mực khô, mực tươi Cô Tô</li>
                                     <li>Tôm nõn</li>
                                     <li>Bề bề bóc nõn</li>
-                                    <li>Trai tươi</li>
+                                    <li>Cơ trai tươi</li>
                                     <li>Sá sùng Quan Lạn</li>
                                     <li>Ruốc tôm, ruốc hàu, ruốc bề bề, ruốc cá</li>
                                 </ul>
@@ -109,17 +164,64 @@ const Page = () => {
                     </TabsContent>
                 </Tabs>
 
-                <div className="mt-4 text-center bg-[#d5f3f8] text-black py-4">
-                    <h2 className="text-2xl font-bold mb-2">Đặc biệt</h2>
-                    <p className="font-semibold">Nhận đặt tiệc: Thịt trâu tươi, gà đồi, hải sản tươi sống,...</p>
-                    <p>Mực tươi, mực khô Cô Tô, Nem cua bể, Tôm, Thịt chưng mắm tép, Cá thu....</p>
-                </div>
+                <section className="relative mt-4 text-center bg-[#d5f3f8] text-black py-8">
+                    <h2 className={cn("uppercase font-bold text-2xl md:text-3xl text-black text-center my-2", fontBerkshireSwash.className)}>Đặc biệt</h2>
+                    <p className="font-semibold text-xl md:text-2xl">Nhận đặt tiệc: Hải sản tươi sống, thịt trâu tươi, gà đồi,...</p>
+                    <Image src="/space_1.jpg" alt="@space_1" width={150} height={150} className="absolute right-16 md:right-32 -top-16 md:-top-10 w-[100px] md:w-[150px] h-[100px] md:h-[150px] rotate-12 rounded-lg shadow-lg" />
+                    <Image src="/space_2.jpg" alt="@space_2" width={150} height={150} className="absolute right-0 -top-10 w-[100px] md:w-[150px] h-[100px] md:h-[150px] -rotate-12 rounded-lg shadow-lg" />
+                </section>
 
-                <div className="my-4 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 max-w-6xl mx-auto">
-                    <Image src="/party_1.jpg" alt="Hải sản tươi sống" width={400} height={300} className="w-full h-full rounded-lg shadow-lg" />
-                    <Image src="/party_2.jpg" alt="Món ăn đặc sắc" width={400} height={300} className="w-full h-full rounded-lg shadow-lg" />
-                    <Image src="/party_3.jpg" alt="Không gian nhà hàng" width={400} height={300} className="w-full h-full rounded-lg shadow-lg" />
-                </div>
+                <section className="my-4 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 w-full px-6 md:p-0 max-w-7xl justify-center items-center mx-auto">
+                    <Image src="/food_25.jpg" alt="@food_25" width={300} height={200} className="w-full md:w-[250px] h-[250px] rounded-lg shadow-lg" />
+                    <Image src="/food_26.jpg" alt="@food_26" width={300} height={200} className="w-full md:w-[250px] h-[250px] rounded-lg shadow-lg" />
+                    <Image src="/food_27.jpg" alt="@food_27" width={300} height={200} className="w-full md:w-[250px] h-[250px] rounded-lg shadow-lg" />
+                    <Image src="/food_28.jpg" alt="@food_28" width={300} height={200} className="w-full md:w-[250px] h-[250px] rounded-lg shadow-lg" />
+                    <Image src="/food_29.jpg" alt="@food_29" width={300} height={200} className="w-full md:w-[250px] h-[250px] rounded-lg shadow-lg" />
+                    <Image src="/food_6.jpg" alt="@food_6" width={300} height={200} className="w-full md:w-[250px] h-[250px] rounded-lg shadow-lg" />
+                    <Image src="/food_7.jpg" alt="@food_7" width={300} height={200} className="w-full md:w-[250px] h-[250px] rounded-lg shadow-lg" />
+                    <Image src="/food_8.jpg" alt="@food_8" width={300} height={200} className="w-full md:w-[250px] h-[250px] rounded-lg shadow-lg" />
+                </section>
+
+                <section className="w-full px-6 md:p-0 mx-auto max-w-7xl mb-4">
+                    <h2
+                        className={cn(
+                            "uppercase font-bold text-xl md:text-2xl text-black text-center my-4",
+                            fontBerkshireSwash.className
+                        )}
+                    >
+                        Thực đơn
+                    </h2>
+                    <div className="overflow-x-auto rounded-lg shadow-lg">
+                        <table className="w-full border-collapse bg-white text-left text-sm md:text-base text-black">
+                            <thead className="bg-[#0c70b4] text-white">
+                                <tr>
+                                    <th className="px-4 md:px-6 py-3">STT</th>
+                                    <th className="px-4 md:px-6 py-3 text-center md:text-left">Tên Món</th>
+                                    <th className="px-4 md:px-6 py-3 text-center md:text-left">Số lượng</th>
+                                    <th className="px-4 md:px-6 py-3 text-center md:text-left">Đơn giá (VNĐ)</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                {menuItems.map((item, index) => (
+                                    <tr
+                                        key={index}
+                                        className={`border-b ${index % 2 === 0 ? "bg-blue-50" : "bg-white"
+                                            }`}
+                                    >
+                                        <td className="px-4 md:px-6 py-3 font-medium text-gray-700">
+                                            {index + 1}
+                                        </td>
+                                        <td className="px-4 md:px-6 py-3 break-words">{item.name}</td>
+                                        <td className="px-4 md:px-6 py-3">
+                                            {index === 25 || index === 29 ? "1(con)" : "1(đĩa)"}
+                                        </td>
+                                        <td className="px-4 md:px-6 py-3">{item.price.toLocaleString()}</td>
+                                    </tr>
+                                ))}
+                            </tbody>
+                        </table>
+                    </div>
+                </section>
             </main>
             <SiteFooter />
             <FloatingSocialButtons />
