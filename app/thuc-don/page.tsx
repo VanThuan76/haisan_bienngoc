@@ -179,12 +179,14 @@ const Page = () => {
                     </TabsContent>
                 </Tabs>
 
-                <section className="relative mt-4 text-center bg-[#d5f3f8] text-black py-8">
-                    <h2 className={cn("uppercase font-bold text-2xl md:text-3xl text-black text-center my-2", fontBerkshireSwash.className)}>Đặc biệt</h2>
-                    <p className="font-semibold text-xl md:text-2xl">Nhận đặt tiệc: Hải sản tươi sống, thịt trâu tươi, gà đồi,...</p>
-                    <Image src="/space_1.jpg" alt="@space_1" width={150} height={150} className="absolute right-16 md:right-32 -top-16 md:-top-10 w-[100px] md:w-[150px] h-[100px] md:h-[150px] rotate-12 rounded-lg shadow-lg" />
-                    <Image src="/space_2.jpg" alt="@space_2" width={150} height={150} className="absolute right-0 -top-10 w-[100px] md:w-[150px] h-[100px] md:h-[150px] -rotate-12 rounded-lg shadow-lg" />
-                </section>
+                {tabValue === "combo" && (
+                    <section className="relative mt-4 text-center bg-[#d5f3f8] text-black py-8">
+                        <h2 className={cn("uppercase font-bold text-2xl md:text-3xl text-black text-center my-2", fontBerkshireSwash.className)}>Đặc biệt</h2>
+                        <p className="font-semibold text-xl md:text-2xl">Nhận đặt tiệc: Hải sản tươi sống, thịt trâu tươi, gà đồi,...</p>
+                        <Image src="/space_1.jpg" alt="@space_1" width={150} height={150} className="absolute right-16 md:right-32 -top-16 md:-top-10 w-[100px] md:w-[150px] h-[100px] md:h-[150px] rotate-12 rounded-lg shadow-lg" />
+                        <Image src="/space_2.jpg" alt="@space_2" width={150} height={150} className="absolute right-0 -top-10 w-[100px] md:w-[150px] h-[100px] md:h-[150px] -rotate-12 rounded-lg shadow-lg" />
+                    </section>
+                )}
 
                 <section className="my-4 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 w-full px-6 md:p-0 max-w-7xl justify-center items-center mx-auto">
                     {currentImages.map((image, index) => {
