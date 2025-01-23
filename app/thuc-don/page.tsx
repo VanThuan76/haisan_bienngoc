@@ -169,11 +169,11 @@ const Page = () => {
                                     <li>Tôm thịt chưng mắm tép</li>
                                     <li>Cá thu phấn một nắng</li>
                                     <li>Mực khô, mực tươi Cô Tô</li>
-                                    <li>Tôm nõn</li>
+                                    <li>Tôm tươi bóc nõn</li>
                                     <li>Bề bề bóc nõn</li>
                                     <li>Cơ trai tươi</li>
                                     <li>Sá sùng Quan Lạn</li>
-                                    <li>Ruốc tôm, ruốc hàu, ruốc bề bề, ruốc cá</li>
+                                    <li>Ruốc tôm, ruốc hàu, ruốc bề bề, ruốc cá,...</li>
                                 </ul>
                             </CardContent>
                         </Card>
