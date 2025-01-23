@@ -92,6 +92,7 @@ const Page = () => {
                                 <ul className="list-disc list-inside uppercase space-y-2 border-l border-l-blue-300 pl-4">
                                     <li>Bánh cuốn chả mực</li>
                                     <li>Bún cù kỳ</li>
+                                    <li>Bún bò</li>
                                     <li>Bún cá song tươi</li>
                                     <li>Bún hải sản thập cẩm</li>
                                     <li>Bún bề bề tươi</li>
