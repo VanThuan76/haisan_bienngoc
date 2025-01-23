@@ -108,7 +108,7 @@ const Page = () => {
                             </CardHeader>
                             <CardContent className="flex flex-wrap justify-start items-start gap-4">
                                 <div className="md:border-r md:border-r-blue-300 md:pr-4">
-                                    <p className="mb-2 underline decoration-green-500 font-semibold">Combo 2Tr / Bàn</p>
+                                    <p className="mb-2 underline decoration-green-500 font-semibold">Combo 200k/Suất - 8 Người/Mâm 2Tr</p>
                                     <ul className="list-disc list-inside uppercase space-y-2">
                                         <li>Ốc hương hấp</li>
                                         <li>Nem hải sản kèm bún</li>
@@ -126,7 +126,7 @@ const Page = () => {
                                     </ul>
                                 </div>
                                 <div className="md:border-r md:border-r-blue-300 md:pr-4">
-                                    <p className="mb-2 underline decoration-indigo-500 font-semibold">Combo 2Tr / Bàn</p>
+                                    <p className="mb-2 underline decoration-indigo-500 font-semibold">Combo 200k / Suất - 8 Người / Mâm 2Tr</p>
                                     <ul className="list-disc list-inside uppercase space-y-2">
                                         <li>Tôm rảo biển</li>
                                         <li>Mực ống nhảy</li>
