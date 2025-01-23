@@ -5,8 +5,9 @@ import Image from "next/image"
 
 export function SiteFooter() {
     return (
-        <footer className="w-full bg-[#0c70b4]">
-            <div className="max-w-[1440px] px-4 md:px-12 lg:px-24 py-10 flex flex-col gap-8">
+        <footer className="w-full flex flex-col justify-center items-center gap-2">
+            <h3 className="text-center text-black text-lg font-semibold">⚠️ Nhà hàng cam đoan thực phẩm tươi sống , không dùng chất phụ gia làm hại sức khỏe khách hàng</h3>
+            <div className="w-full bg-[#0c70b4] max-w-[1440px] px-4 md:px-12 lg:px-24 py-10 flex flex-col gap-8">
                 <div className="grid grid-cols-1 md:grid-cols-6 justify-between items-start gap-4">
                     <Link href="/" className="flex items-center col-span-2 md:col-span-3">
                         <Image

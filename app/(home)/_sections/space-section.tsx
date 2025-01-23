@@ -28,6 +28,7 @@ export function SpaceSection() {
         '/background_2.jpg',
         '/background_6.jpg',
         '/background_3.jpg',
+        '/space_1.jpg',
         '/background_4.jpg',
         '/background_7.jpg',
         '/background_5.jpg',

@@ -48,9 +48,9 @@ const Page = () => {
         { name: "Ngán", price: 50000 },
     ];
 
-    const imagesCombo = ["/party_1.jpg", "/food_6.jpg", "/party_2.jpg", "/food_7.jpg", "/party_3.jpg", "/food_8.jpg"]
+    const imagesCombo = ["/food_6.jpg", "/food_7.jpg", "/food_8.jpg"]
     const imagesBreakFast = ["/food_2.jpg", "/food_3.jpg", "/food_4.jpg", "/food_5.jpg"]
-    const imagesFrozen = ["/food_25.jpg", "/food_26.jpg", "/food_27.jpg", "/food_28.jpg"]
+    const imagesFrozen = ["/food_30.jpg", "/food_31.jpg", "/food_27.jpg", "/food_28.jpg"]
 
     const currentImages = tabValue === "combo" ? imagesCombo : tabValue === "breakfast" ? imagesBreakFast : imagesFrozen
 
@@ -107,7 +107,7 @@ const Page = () => {
                             </CardHeader>
                             <CardContent className="flex flex-wrap justify-start items-start gap-4">
                                 <div className="md:border-r md:border-r-blue-300 md:pr-4">
-                                    <p className="mb-2 underline decoration-green-500 font-semibold">Combo Lẩu 200k / Suất</p>
+                                    <p className="mb-2 underline decoration-green-500 font-semibold">Combo 2Tr / Bàn</p>
                                     <ul className="list-disc list-inside uppercase space-y-2">
                                         <li>Ốc hương hấp</li>
                                         <li>Nem hải sản kèm bún</li>
@@ -125,7 +125,7 @@ const Page = () => {
                                     </ul>
                                 </div>
                                 <div className="md:border-r md:border-r-blue-300 md:pr-4">
-                                    <p className="mb-2 underline decoration-indigo-500 font-semibold">Combo Cơm Gọi Món 200k / Suất</p>
+                                    <p className="mb-2 underline decoration-indigo-500 font-semibold">Combo 2Tr / Bàn</p>
                                     <ul className="list-disc list-inside uppercase space-y-2">
                                         <li>Tôm rảo biển</li>
                                         <li>Mực ống nhảy</li>
@@ -180,11 +180,11 @@ const Page = () => {
                 </Tabs>
 
                 {tabValue === "combo" && (
-                    <section className="relative mt-4 text-center bg-[#d5f3f8] text-black py-8">
+                    <section className="relative mt-10 md:mt-0 text-center bg-[#d5f3f8] text-black py-8">
                         <h2 className={cn("uppercase font-bold text-2xl md:text-3xl text-black text-center my-2", fontBerkshireSwash.className)}>Đặc biệt</h2>
                         <p className="font-semibold text-xl md:text-2xl">Nhận đặt tiệc: Hải sản tươi sống, thịt trâu tươi, gà đồi,...</p>
-                        <Image src="/space_1.jpg" alt="@space_1" width={150} height={150} className="absolute right-16 md:right-32 -top-16 md:-top-10 w-[100px] md:w-[150px] h-[100px] md:h-[150px] rotate-12 rounded-lg shadow-lg" />
-                        <Image src="/space_2.jpg" alt="@space_2" width={150} height={150} className="absolute right-0 -top-10 w-[100px] md:w-[150px] h-[100px] md:h-[150px] -rotate-12 rounded-lg shadow-lg" />
+                        <Image src="/space_1.jpg" alt="@space_1" width={150} height={150} className="absolute right-16 md:right-32 -top-16 w-[100px] md:w-[150px] h-[100px] md:h-[150px] rotate-12 rounded-lg shadow-lg" />
+                        <Image src="/background_7.jpg" alt="@space_2" width={150} height={150} className="absolute right-0 -top-16 w-[100px] md:w-[150px] h-[100px] md:h-[150px] -rotate-12 rounded-lg shadow-lg" />
                     </section>
                 )}
 
