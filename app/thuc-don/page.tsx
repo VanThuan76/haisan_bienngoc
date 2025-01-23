@@ -1,5 +1,7 @@
 'use client'
+
 import Image from "next/image"
+import { useState } from "react";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
 
@@ -11,6 +13,8 @@ import { SiteFooter } from "../(home)/_sections/site-footer";
 import { SiteHeader } from "../(home)/_sections/site-header";
 
 const Page = () => {
+    const [tabValue, setTabValue] = useState("combo");
+
     const menuItems = [
         { name: "Mực tươi", price: 150000 },
         { name: "Tôm rảo biển", price: 150000 },
@@ -44,6 +48,12 @@ const Page = () => {
         { name: "Ngán", price: 50000 },
     ];
 
+    const imagesCombo = ["/party_1.jpg", "/food_6.jpg", "/party_2.jpg", "/food_7.jpg", "/party_3.jpg", "/food_8.jpg"]
+    const imagesBreakFast = ["/food_2.jpg", "/food_3.jpg", "/food_4.jpg", "/food_5.jpg"]
+    const imagesFrozen = ["/food_25.jpg", "/food_26.jpg", "/food_27.jpg", "/food_28.jpg"]
+
+    const currentImages = tabValue === "combo" ? imagesCombo : tabValue === "breakfast" ? imagesBreakFast : imagesFrozen
+
     return (
         <div className="relative min-h-screen">
             <SiteHeader />
@@ -53,7 +63,12 @@ const Page = () => {
                     <p className="relative z-40 text-xl">Đặc Sắc - Tươi Sống - Giá Rẻ</p>
                     <div className="absolute z-30 w-full h-full bg-black/70"></div>
                 </section>
-                <Tabs defaultValue="combo" className="w-full max-w-7xl mx-auto">
+
+                <Tabs
+                    defaultValue={tabValue}
+                    onValueChange={(value) => setTabValue(value)}
+                    className="w-full max-w-7xl mx-auto"
+                >
                     <TabsList className="grid w-full grid-cols-3">
                         <TabsTrigger value="breakfast">Bữa sáng</TabsTrigger>
                         <TabsTrigger value="combo">Combo</TabsTrigger>
@@ -172,14 +187,11 @@ const Page = () => {
                 </section>
 
                 <section className="my-4 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 w-full px-6 md:p-0 max-w-7xl justify-center items-center mx-auto">
-                    <Image src="/food_25.jpg" alt="@food_25" width={300} height={200} className="w-full md:w-[250px] h-[250px] rounded-lg shadow-lg" />
-                    <Image src="/food_26.jpg" alt="@food_26" width={300} height={200} className="w-full md:w-[250px] h-[250px] rounded-lg shadow-lg" />
-                    <Image src="/food_27.jpg" alt="@food_27" width={300} height={200} className="w-full md:w-[250px] h-[250px] rounded-lg shadow-lg" />
-                    <Image src="/food_28.jpg" alt="@food_28" width={300} height={200} className="w-full md:w-[250px] h-[250px] rounded-lg shadow-lg" />
-                    <Image src="/food_29.jpg" alt="@food_29" width={300} height={200} className="w-full md:w-[250px] h-[250px] rounded-lg shadow-lg" />
-                    <Image src="/food_6.jpg" alt="@food_6" width={300} height={200} className="w-full md:w-[250px] h-[250px] rounded-lg shadow-lg" />
-                    <Image src="/food_7.jpg" alt="@food_7" width={300} height={200} className="w-full md:w-[250px] h-[250px] rounded-lg shadow-lg" />
-                    <Image src="/food_8.jpg" alt="@food_8" width={300} height={200} className="w-full md:w-[250px] h-[250px] rounded-lg shadow-lg" />
+                    {currentImages.map((image, index) => {
+                        return (
+                            <Image key={index} src={image} alt={`@food_${index}`} width={300} height={200} className="w-full md:w-[300px] h-[250px] rounded-lg shadow-lg" />
+                        )
+                    })}
                 </section>
 
                 <section className="w-full px-6 md:p-0 mx-auto max-w-7xl mb-4">
